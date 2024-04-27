@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(255,0,0);
+    background: linear-gradient(156deg, rgba(255,0,0,1) 0%, rgba(143,0,0,1) 100%);
+}
+
+header {
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+
+#box {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(88, 0, 0);
+    border-radius: 2rem;
+}
+
+#box div:nth-child(1) {
+    height: 5rem;
+    color: white;
+    font-size: 1.6rem bold;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box div:nth-child(2) {
+    height: 90%;
+}
+
+.button {
+    padding: 1rem 2rem;
+    width: fit-content;
+    border-radius: 1rem;
+    font: 1.6rem bold;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    background: rgb(182, 7, 7);
+    cursor: pointer;
+    height: fit-content;
+}
+
+#containerGame {
+    display: grid;
+    grid-template-areas: 
+    'columns_1 columns_2 columns_3 columns_4 columns_5'
+    'columns_6 columns_7 columns_8 columns_4 columns_9'
+    'columns_10 columns_11 columns_12 columns_13 columns_14'
+    'columns_15 columns_16 columns_17 columns_18 columns_19'
+    'columns_20 columns_21 columns_22 columns_23 columns_24';
+
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+#buttonYes {
+    grid-area: columns_11;
+}
+
+#buttonNo {
+    grid-area: columns_12;
+}
+
+.heart {
+    font-size: 20px;
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
