@@ -32,7 +32,7 @@ function generaterHeart() {
 
 function onButtonYes() {
     box.innerHTML = `
-    <img src="img-1.jpg" alt="Imagem de coração">
+    <img src="image 5.svg" alt="Imagem de coração">
     <audio loop id="music">
                 <source src="./Música romantica meme.mpeg" type="audio/mpeg">
             </audio>
